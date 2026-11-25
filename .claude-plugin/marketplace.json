@@ -1,0 +1,5 @@
+{
+  "name": "doc-chat",
+  "owner": { "name": "GauravDC27" },
+  "plugins": [{ "name": "doc-chat", "source": "./" }]
+}

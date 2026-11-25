@@ -1,0 +1,49 @@
+{
+  "name": "doc-chat",
+  "version": "0.2.0",
+  "description": "Doc chat in every session: read a PDF, HTML or Markdown doc beside the conversation, pick a passage and ask Sonnet what, why or how, without touching the session's own conversation",
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "model": {
+      "type": "string",
+      "title": "Model",
+      "description": "The model that answers questions about a doc",
+      "default": "claude-sonnet-5-5"
+    },
+    "effort": {
+      "type": "string",
+      "title": "How hard it thinks",
+      "description": "Higher is slower and costs more, and helps with maths and tricky whys",
+      "options": [
+        "low",
+        "medium",
+        "high"
+      ],
+      "default": "medium"
+    },
+    "background": {
+      "type": "string",
+      "title": "About you",
+      "description": "What the answers can assume you know",
+      "default": "An engineer comfortable with Python and the basics of machine learning. Wants the AI and ML ideas underneath: architectures, the maths, why a technique is used and what the alternatives were, and the research it comes from."
+    },
+    "folders": {
+      "type": "string",
+      "title": "Where to look for docs",
+      "description": "Folders the doc list searches, separated by commas; empty means the session's folder",
+      "default": ""
+    },
+    "autoOpen": {
+      "type": "boolean",
+      "title": "Show the widget in every session",
+      "description": "Open the Doc chat widget when a session starts; off, open it with /doc",
+      "default": true
+    },
+    "watchClipboard": {
+      "type": "boolean",
+      "title": "Pick up copied passages",
+      "description": "While the widget is on screen, text you copy from the open doc shows up as the passage to ask about. Copied text that is not in the doc is never used or sent",
+      "default": true
+    }
+  }
+}
