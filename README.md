@@ -77,3 +77,7 @@ The doc's full text goes to the model with each question and is marked for the p
 - Scanned PDFs with no text layer can't be read.
 - Docs longer than about 400,000 characters are cut to their first part, and the widget says so.
 - Answers count toward the session's cost.
+
+## License
+
+MIT. See [LICENSE](LICENSE).

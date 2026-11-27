@@ -2,6 +2,7 @@
   "name": "doc-chat",
   "version": "0.2.0",
   "description": "Doc chat in every session: read a PDF, HTML or Markdown doc beside the conversation, pick a passage and ask Sonnet what, why or how, without touching the session's own conversation",
+  "license": "MIT",
   "types": "./types/index.d.ts",
   "userConfig": {
     "model": {
